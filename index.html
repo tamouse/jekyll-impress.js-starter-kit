@@ -7,7 +7,7 @@
 <title>Jekyll + Impress.js</title>
 
 <meta name="description" content="
-Just that more impressive jekyllization
+Just that much more Impressive Jekyllization!
 " />
 <meta name="author" content="Tamara Temple" />
 
@@ -26,12 +26,12 @@ Just that more impressive jekyllization
 <div id="impress">
 <div
    id="title"
-   class="step "
+   class="step  "
    
    data-x="0"
    data-y="0"
-   data-z="0"
-   data-scale="4"
+   
+   data-scale="2"
    data-rotate="0"
    >
   <style media="screen">
@@ -42,7 +42,7 @@ Just that more impressive jekyllization
 <h1>Jekyll + Impress.js</h1>
 
 <p><em>
-Just that more impressive jekyllization
+Just that much more Impressive Jekyllization!
 </em></p>
 
 <p>Slides: <a href="https://tamouse.github.io/jekyll-impress.js-starter-kit/">https://tamouse.github.io/jekyll-impress.js-starter-kit/</a></p>
@@ -52,30 +52,45 @@ Just that more impressive jekyllization
 
 <div
    id="slide-down"
-   class="step slide"
+   class="step slide text-center"
    
    data-x="0"
-   data-y="3000"
-   data-z="0"
+   data-y="2000"
+   
    data-scale="3"
-   data-rotate="0"
+   
+     
+     
+     
+   
    >
-  <h2>this is below</h2>
+  <blockquote>
 
-<p>(yes it is)</p>
+  <h3>Jekyll</h3>
+
+<p>A blog-aware static site generator…</p>
+
+<p>That can do <strong>so</strong> much more!</p>
+
+
+</blockquote>
 
 </div>
 
 
 <div
    id="local-style"
-   class="step "
+   class="step  "
    
    data-x="0"
-   data-y="6000"
-   data-z="0"
-   data-scale="1"
-   data-rotate="0"
+   data-y="-2000"
+   
+   data-scale="3"
+   
+     
+     
+     
+   
    >
   <style>
 #local-style { text-align: center;}
@@ -85,50 +100,359 @@ color: midnightblue;
 }
 </style>
 
-<h1>this should be blue</h1>
+<h1>Impress.JS</h1>
 
-<ul>
-  <li>and you think it will be?</li>
-  <li>yes I do!</li>
-</ul>
+<p>is a <strong>presentation tool</strong> inspired by
+<a href="http://prezi.com">prezi</a></p>
 
 </div>
 
 
 <div
    id="rotate-90"
-   class="step text-center"
+   class="step  text-center"
    
-   data-x="3000"
-   data-y="3000"
-   data-z="0"
-   data-scale="6"
+   data-x="-3000"
+   data-y="0"
+   
+   data-scale="4"
    data-rotate="90"
    >
-  <p>Impress.js is a <strong>presentation</strong> tool
-inspired by the idea behind
-<a href="#">prezi</a></p>
+  <p>Putting <strong>Jekyll</strong> and <strong>Impress.JS</strong> together makes building presentations easier.</p>
 
 </div>
 
 
 <div
    id="tiny-spin"
-   class="step text-center"
+   class="step slide text-center"
    
-   data-x="6000"
-   data-y="9000"
+   data-x="4000"
+   data-y="0"
    data-z="-3000"
    data-scale="1"
    data-rotate="720"
    >
-  <p>and <em>tiny</em> ideas</p>
+  <blockquote>
+
+  <h3>Breaking News!</h3>
+
+
+</blockquote>
 
 </div>
 
 
+<div
+   id="00-06-styles-in-your-slides"
+   class="step slide text-center"
+   
+   data-x="4000"
+   data-y="1000"
+   data-z="-3000"
+   data-scale="1"
+   
+     
+     
+     
+   
+   >
+  <blockquote>
 
-<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
+  <p>You can put a &lt;style&gt; section <strong>right in your slide</strong></p>
+
+<p>(even if it’s markdown!)</p>
+
+
+</blockquote>
+
+</div>
+
+
+<div
+   id="00-07-slug"
+   class="step slide text-center"
+   
+   data-x="4000"
+   data-y="2000"
+   data-z="-3000"
+   data-scale="1"
+   
+     
+     
+     
+   
+   >
+  <blockquote>
+
+  <p>Put a <code class="highlighter-rouge">slug</code> in the FrontMatter, which becomes the <code class="highlighter-rouge">id</code> attribute for the slide.</p>
+
+
+</blockquote>
+
+</div>
+
+
+<div
+   id="00-08-inner-style"
+   class="step slide text-center"
+   
+   data-x="4000"
+   data-y="3000"
+   data-z="-3000"
+   data-scale="1"
+   
+     
+     
+     
+   
+   >
+  <blockquote>
+
+  <p>In the <code class="highlighter-rouge">&lt;style&gt;</code> block, use #{{page.slug}} to narrow the style scope to this slide.</p>
+
+
+</blockquote>
+
+</div>
+
+
+<div
+   id="slug-example"
+   class="step slide "
+   
+   data-x="4000"
+   data-y="4000"
+   data-z="-3000"
+   data-scale="1"
+   
+     
+     
+     
+   
+   >
+  <blockquote>
+
+  <style media="screen">
+#slug-example blockquote {
+font-size: 20px !important;
+line-height: 22px !important;
+width: 70%;
+}
+
+#slug-example blockquote figure {
+padding: 0 20px;
+}
+
+#slug-example blockquote figure:first-child {
+padding-top: 20px;
+}
+#slug-example blockquote figure:last-child {
+padding-bottom: 20px;
+}
+
+
+</style>
+
+<div class="code-stuff">
+
+  <figure class="highlight">
+    <pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">slide</span>
+<span class="s">slug</span><span class="pi">:</span> <span class="s">slug-example</span>
+<span class="s">data</span><span class="pi">:</span>
+  <span class="s">x</span><span class="pi">:</span> <span class="s">4000</span>
+  <span class="s">y</span><span class="pi">:</span> <span class="s">5000</span>
+
+<span class="nn">---</span></code></pre>
+  </figure>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;style </span><span class="na">media=</span><span class="s">"screen"</span><span class="nt">&gt;</span></code></pre>
+  </figure>
+
+  <figure class="highlight">
+    <pre><code class="language-css" data-lang="css"><span class="err">#</span><span class="p">{</span><span class="err">{page.slug</span><span class="p">}</span><span class="err">}</span> <span class="nt">blockquote</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">20px</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+  </figure>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;/style&gt;</span></code></pre>
+  </figure>
+
+</div>
+
+<p> </p>
+
+<p class="text-center"><em>…and check out the syntax highlighting, too!</em></p>
+
+
+</blockquote>
+
+</div>
+
+
+<div
+   id="one-more-thing"
+   class="step  "
+   
+   data-x="3000"
+   data-y="-2000"
+   
+   data-scale="2"
+   
+     
+     
+     
+   
+   >
+  <p>one more thing…</p>
+
+</div>
+
+
+<div
+   id="its-in-3d"
+   class="step  "
+   
+   data-x="4000"
+   data-y="-2000"
+   data-z="-100"
+   data-scale="4"
+   
+     data-rotate-x="-40"
+     data-rotate-y="10"
+     
+   
+   >
+  <style>
+#its-in-3d p {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
+    -ms-transform-style:     preserve-3d;
+    -o-transform-style:      preserve-3d;
+    transform-style:         preserve-3d;
+}
+
+/*
+    Below we position each word separately along Z axis and we want it to transition
+    to default position in 0.5s when the step gets `present` class.
+
+    Quite a simple idea, but lot's of styles and prefixes.
+*/
+#its-in-3d span,
+#its-in-3d b {
+    display: inline-block;
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+     transform:        translateZ(40px);
+
+    -webkit-transition: 2s;
+    -moz-transition:    2s;
+    -ms-transition:     2s;
+    -o-transition:      2s;
+    transition:         2s;
+}
+
+#its-in-3d .have {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform:    translateZ(-40px);
+    -ms-transform:     translateZ(-40px);
+    -o-transform:      translateZ(-40px);
+    transform:         translateZ(-40px);
+}
+
+#its-in-3d .you {
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#its-in-3d .noticed {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform:    translateZ(-40px);
+    -ms-transform:     translateZ(-40px);
+    -o-transform:      translateZ(-40px);
+    transform:         translateZ(-40px);
+}
+
+#its-in-3d .its {
+    -webkit-transform: translateZ(60px);
+    -moz-transform:    translateZ(60px);
+    -ms-transform:     translateZ(60px);
+    -o-transform:      translateZ(60px);
+    transform:         translateZ(60px);
+}
+
+#its-in-3d .in {
+    -webkit-transform: translateZ(-10px);
+    -moz-transform:    translateZ(-10px);
+    -ms-transform:     translateZ(-10px);
+    -o-transform:      translateZ(-10px);
+    transform:         translateZ(-10px);
+}
+
+#its-in-3d .footnote {
+    font-size: 32px;
+
+    -webkit-transform: translateZ(-10px);
+    -moz-transform:    translateZ(-10px);
+    -ms-transform:     translateZ(-10px);
+    -o-transform:      translateZ(-10px);
+    transform:         translateZ(-10px);
+}
+
+#its-in-3d.present span,
+#its-in-3d.present b {
+    -webkit-transform: translateZ(0px);
+    -moz-transform:    translateZ(0px);
+    -ms-transform:     translateZ(0px);
+    -o-transform:      translateZ(0px);
+    transform:         translateZ(0px);
+}
+
+#its-in-3d.present .you,
+#its-in-3d.present .its
+{
+    transform: translate3d(50px, -30px, 2000px);
+    transition: 1s 1s;
+
+}
+
+
+</style>
+
+
+<p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+<span class="footnote">* beat that, prezi ;)</span>
+
+</div>
+
+
+<div
+   id="overview"
+   class="step  "
+   
+   data-x="0"
+   data-y="0"
+   
+   data-scale="9"
+   
+     
+     
+     
+   
+   >
+  &nbsp;
+
+</div>
+
+
 </div>
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
